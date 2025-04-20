@@ -1,0 +1,23 @@
+.text-outline {
+    -webkit-text-stroke: 1px whitesmoke;
+  }
+
+.HoverEffect p{
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.HoverEffect p::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    transition: width 0.3s ease-in-out;
+}
+
+.HoverEffect p:hover::before{
+    width: 100%;
+}

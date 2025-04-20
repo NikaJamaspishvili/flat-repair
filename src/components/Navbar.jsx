@@ -1,7 +1,6 @@
 import { useState } from "react"
 import "./style.css";
 
-
 const Navbar = () => {
     const [show,setShow] = useState(false);
 

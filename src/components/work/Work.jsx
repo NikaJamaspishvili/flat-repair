@@ -5,7 +5,7 @@ const Work = () => {
     const [loading,setLoading] = useState(true);
 
     useEffect(()=>{
-        fetch('http://localhost:3000/get-cloudinary-images')
+        fetch('./netlify/functions/get-cloudinary-images')
         .then(res=>res.json())
         .then(data=>{
             setLoading(false);

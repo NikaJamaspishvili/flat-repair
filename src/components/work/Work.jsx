@@ -1,5 +1,5 @@
 import { useEffect,useState } from "react"
-
+import "../style.css";
 const Work = () => {
     const [data,setData] = useState([]);
     const [loading,setLoading] = useState(true);
@@ -26,7 +26,7 @@ const Work = () => {
        {data.map((result,index)=>{
         return <img className="w-full h-full" key={index} src={result} alt={index}/>
        })}
-      </section>: <h1 className="text-black text-3xl font-bold text-center">Loading...</h1>}
+      </section>: <img src="/spinner.png" className="mx-auto w-[50px] spinner-spin"/>}
     </div>
   )
 }
